@@ -12,9 +12,7 @@ function myFunction() {
     var url_string = window.location.href; //window.location.href
     var url = new URL(url_string);
     var c = url.searchParams.get("url");
-    document.getElementById("user").value =url.searchParams.get("name");
+    document.getElementById("user").value =url.searchParams.get("url");
     </script>
-<input id="user" value"">
-</script>
 </body>
 </html> 

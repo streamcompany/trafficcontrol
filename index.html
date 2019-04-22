@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body onload="
+<body onload="logParam()">
 <body onload="myFunction()">
 
 <script>
@@ -9,10 +9,12 @@ function myFunction() {
 }
 </script>
 <script>
+    function logParam(){
     var url_string = window.location.href; //window.location.href
     var url = new URL(url_string);
     var c = url.searchParams.get("url");
-    document.getElementById("user").value =url.searchParams.get("url");
-    </script>
+    document.getElementById("user").value = c;
+}
+</script>
 </body>
 </html> 

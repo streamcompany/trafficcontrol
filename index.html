@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-
+<body onload="
 <body onload="myFunction()">
 
 <script>
 function myFunction() {
-  window.location.replace(url)
+  window.location.replace(c)
 }
 </script>
 <script>
     var url_string = window.location.href; //window.location.href
     var url = new URL(url_string);
-    var c = url.searchParams.get("name");
+    var c = url.searchParams.get("url");
     document.getElementById("user").value =url.searchParams.get("name");
     </script>
 <input id="user" value"">
